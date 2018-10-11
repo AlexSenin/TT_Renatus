@@ -18,6 +18,7 @@ namespace UI
                 GameObject newboy = Instantiate(Spineboy);
                 newboy.transform.parent = parent;
                 newboy.GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
+                newboy.GetComponent<RectTransform>().localScale = new Vector3(6.34f, 2.41f, 1);
                 canCallSpineboy = false;
             }
         }

@@ -11,6 +11,7 @@ namespace UI
     {
         public int price;
         public Sprite sprite;
+        public Vector3 scale = new Vector3 (1,1,1);
     }
 
 
@@ -41,7 +42,13 @@ namespace UI
             else Debug.LogError(errorTextElementNotFound + "CoinsAmount_Text");
 
             //set coin sprite
-            if (item.transform.Find("Coins_Image")) item.transform.Find("Coins_Image").gameObject.GetComponent<Image>().sprite = SetCoinSprite(itemSO.coinAmount);
+            if (item.transform.Find("Coins_Image"))
+            {
+                CoinSprite coinSprite = SetCoinSprite(itemSO.coinAmount);
+                item.transform.Find("Coins_Image").gameObject.GetComponent<Image>().sprite = coinSprite.sprite;
+                item.transform.Find("Coins_Image").gameObject.GetComponent<RectTransform>().localScale = coinSprite.scale;
+            }
+
             else Debug.LogError(errorTextElementNotFound + "Coins_Image");
 
             //Set bonus
@@ -76,13 +83,13 @@ namespace UI
         }
 
 
-        Sprite SetCoinSprite(int coins)
+        CoinSprite SetCoinSprite(int coins)
         {
             foreach (CoinSprite cs in coinSprites)
             {
-                if (cs.price <= coins) return cs.sprite;
+                if (cs.price >= coins) return cs;
             }
-            return coinSprites[coinSprites.Length-1].sprite;
+            return coinSprites[coinSprites.Length-1];
         }
 
         void SetSticker(GameObject sticker, GameObject button, StickerType stickerType)
@@ -115,6 +122,7 @@ namespace UI
             {
                 GameObject newItem = Instantiate(storeItemsPrefab);
                 newItem.transform.parent = itemContainerGO.transform;
+                newItem.GetComponent<RectTransform>().localScale = new Vector3 (1, 1, 1);
                 SetItem(newItem, itemSO);
             }
         }

@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 114311947654975102}
   - component: {fileID: 95262249283591342}
   - component: {fileID: 225219149132049422}
+  - component: {fileID: 114279887793205248}
   m_Layer: 5
   m_Name: PopUp
   m_TagString: Untagged
@@ -101,7 +102,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1844132032474416
 GameObject:
   m_ObjectHideFlags: 1
@@ -113,7 +114,6 @@ GameObject:
   - component: {fileID: 222686753623270862}
   - component: {fileID: 114556138810667664}
   - component: {fileID: 114975889189622196}
-  - component: {fileID: 114677035940280166}
   m_Layer: 5
   m_Name: StoreItems
   m_TagString: Untagged
@@ -175,6 +175,53 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114279887793205248
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1233469758675724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f16c095362c107498965f62c316e2b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storeItemsSO:
+  - {fileID: 11400000, guid: ce013bb40ef0ba24d85c13ce2564cd59, type: 2}
+  - {fileID: 11400000, guid: e5d119aeae4f336439cef9d9cc000bad, type: 2}
+  - {fileID: 11400000, guid: 8b3a50b229314ff48b8a16b09dd25de9, type: 2}
+  - {fileID: 11400000, guid: ef625022d5965f84b993b60ab36b3e20, type: 2}
+  - {fileID: 11400000, guid: 4e960f1f20739ae49836c64f814139ed, type: 2}
+  - {fileID: 11400000, guid: 32186281c76fb6247a69e02104997c4d, type: 2}
+  - {fileID: 11400000, guid: 43de6169c738c114fa85a2ff603dfa02, type: 2}
+  - {fileID: 11400000, guid: 2229cbf70004c6c46b30b5ec69bd86fd, type: 2}
+  coinSprites:
+  - price: 10
+    sprite: {fileID: 21300000, guid: a0a0bdc325d64a44a85c0ca6cfd31dc9, type: 3}
+    scale: {x: 0.85, y: 0.7, z: 1}
+  - price: 50
+    sprite: {fileID: 21300000, guid: 1cd00815c6964984bb882c3487fe5709, type: 3}
+    scale: {x: 0.85, y: 0.7, z: 1}
+  - price: 100
+    sprite: {fileID: 21300000, guid: 4f6aa6b706499494598ead3a64803a26, type: 3}
+    scale: {x: 0.85, y: 1, z: 1}
+  - price: 230
+    sprite: {fileID: 21300000, guid: 7c96e74ef5e70e543812fccb2cb4eafd, type: 3}
+    scale: {x: 1, y: 1, z: 1}
+  - price: 650
+    sprite: {fileID: 21300000, guid: 994feadae12688541b6d3af92f76468f, type: 3}
+    scale: {x: 1, y: 1, z: 1}
+  - price: 1500
+    sprite: {fileID: 21300000, guid: ac0b19cf6631e384898c2a4346b5ab48, type: 3}
+    scale: {x: 1, y: 1, z: 1}
+  storeItemsPrefab: {fileID: 1786468317485362, guid: 12757517a0ed5b341b7a981030e3ee9b,
+    type: 2}
+  aditionalSprites:
+  - {fileID: 21300000, guid: 5272ec6dfe0b29e42a79ac9baefecc79, type: 3}
+  - {fileID: 21300000, guid: 918f240bd95d40743b41be3d0c0793e1, type: 3}
+  - {fileID: 21300000, guid: d96a0986f9dcc0c4e971fa102619af23, type: 3}
+  window: {fileID: 1233469758675724}
+  itemcontainerLocation: ScroleBar/StoreItems
 --- !u!114 &114285962882621110
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -372,46 +419,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
---- !u!114 &114677035940280166
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1844132032474416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f16c095362c107498965f62c316e2b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  storeItemsSO:
-  - {fileID: 11400000, guid: ce013bb40ef0ba24d85c13ce2564cd59, type: 2}
-  - {fileID: 11400000, guid: e5d119aeae4f336439cef9d9cc000bad, type: 2}
-  - {fileID: 11400000, guid: 8b3a50b229314ff48b8a16b09dd25de9, type: 2}
-  - {fileID: 11400000, guid: ef625022d5965f84b993b60ab36b3e20, type: 2}
-  - {fileID: 11400000, guid: 4e960f1f20739ae49836c64f814139ed, type: 2}
-  - {fileID: 11400000, guid: 32186281c76fb6247a69e02104997c4d, type: 2}
-  - {fileID: 11400000, guid: 43de6169c738c114fa85a2ff603dfa02, type: 2}
-  - {fileID: 11400000, guid: 2229cbf70004c6c46b30b5ec69bd86fd, type: 2}
-  coinSprites:
-  - price: 10
-    sprite: {fileID: 21300000, guid: a0a0bdc325d64a44a85c0ca6cfd31dc9, type: 3}
-  - price: 50
-    sprite: {fileID: 21300000, guid: 1cd00815c6964984bb882c3487fe5709, type: 3}
-  - price: 100
-    sprite: {fileID: 21300000, guid: 4f6aa6b706499494598ead3a64803a26, type: 3}
-  - price: 230
-    sprite: {fileID: 21300000, guid: 7c96e74ef5e70e543812fccb2cb4eafd, type: 3}
-  - price: 650
-    sprite: {fileID: 21300000, guid: 994feadae12688541b6d3af92f76468f, type: 3}
-  - price: 1500
-    sprite: {fileID: 21300000, guid: ac0b19cf6631e384898c2a4346b5ab48, type: 3}
-  storeItemsPrefab: {fileID: 1786468317485362, guid: 12757517a0ed5b341b7a981030e3ee9b,
-    type: 2}
-  aditionalSprites:
-  - {fileID: 21300000, guid: 5272ec6dfe0b29e42a79ac9baefecc79, type: 3}
-  - {fileID: 21300000, guid: 918f240bd95d40743b41be3d0c0793e1, type: 3}
-  - {fileID: 21300000, guid: d96a0986f9dcc0c4e971fa102619af23, type: 3}
-  window: {fileID: 1233469758675724}
 --- !u!114 &114695427430752318
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -530,7 +537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5647059}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -561,7 +568,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114677035940280166}
+        - m_Target: {fileID: 0}
           m_MethodName: CloseWindow
           m_Mode: 1
           m_Arguments:
@@ -681,10 +688,10 @@ RectTransform:
   m_Father: {fileID: 224860851585105584}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.16675, y: 0.23366667}
-  m_AnchorMax: {x: 0.9405001, y: 0.6876667}
-  m_AnchoredPosition: {x: -1.2075195, y: 5.755005}
-  m_SizeDelta: {x: -2.3650017, y: 11.330001}
+  m_AnchorMin: {x: 0.21550001, y: 0.017371325}
+  m_AnchorMax: {x: 0.82800007, y: 0.8317905}
+  m_AnchoredPosition: {x: 0.4000244, y: -0.27996826}
+  m_SizeDelta: {x: -5.199997, y: 0.35999966}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224239221698559338
 RectTransform:
@@ -720,10 +727,10 @@ RectTransform:
   m_Father: {fileID: 224134735123986750}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.13650513}
-  m_AnchorMax: {x: 1, y: 0.8856408}
-  m_AnchoredPosition: {x: -0.19995117, y: -67.19177}
-  m_SizeDelta: {x: 0.4, y: 199.2777}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.19995117, y: -83.94501}
+  m_SizeDelta: {x: 0.39999962, y: 167.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224674825620891842
 RectTransform:

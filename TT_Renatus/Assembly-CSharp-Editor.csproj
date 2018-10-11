@@ -187,16 +187,16 @@
     <None Include="Assets\spine-unity\Assets\spine-unity\Editor\Resources\SpineAssetDatabaseMarker.txt" />
     <None Include="Assets\TK2DROOT\tk2d\Editor\EditorUtility.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/TT_Renatus/Project/TT_Renatus/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/TT_Renatus/repo/TT_Renatus/TT_Renatus/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/TT_Renatus/Project/TT_Renatus/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/TT_Renatus/repo/TT_Renatus/TT_Renatus/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/TT_Renatus/Project/TT_Renatus/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/TT_Renatus/repo/TT_Renatus/TT_Renatus/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/TT_Renatus/Project/TT_Renatus/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/TT_Renatus/repo/TT_Renatus/TT_Renatus/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0b11/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -442,10 +442,10 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0b11/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="tk2dExternal">
-      <HintPath>D:/TT_Renatus/Project/TT_Renatus/Assets/TK2DROOT/tk2d/Editor/tk2dExternal.dll</HintPath>
+      <HintPath>D:/TT_Renatus/repo/TT_Renatus/TT_Renatus/Assets/TK2DROOT/tk2d/Editor/tk2dExternal.dll</HintPath>
     </Reference>
     <Reference Include="tk2dSkin">
-      <HintPath>D:/TT_Renatus/Project/TT_Renatus/Assets/TK2DROOT/tk2d/Editor/tk2dSkin.dll</HintPath>
+      <HintPath>D:/TT_Renatus/repo/TT_Renatus/TT_Renatus/Assets/TK2DROOT/tk2d/Editor/tk2dSkin.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/Tax/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
